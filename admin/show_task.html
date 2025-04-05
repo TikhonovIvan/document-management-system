@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Подключение иконок Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Главная</title>
+</head>
+<body>
+<header class="bg-dark"  >
+    <nav class="container navbar navbar-expand-lg  border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" role="button" href="../index.html">Пользователи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/admin/roles.html">Роли</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/admin/departments.html">Отделы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/admin/tasks.html">Список задач</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/admin/all_files.html">Все документы</a>
+                    </li>
+                </ul>
+
+                <div class="btn-group mr-auto">
+                    <button class="btn btn-light btn-md " type="button">
+                        Добро пожаловать: Админ
+                    </button>
+                    <button type="button" class="btn btn-md btn-primary  dropdown-toggle dropdown-toggle-split " data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/admin/admin_info.html">Аккаунт</a></li>
+                        <li><a class="dropdown-item" href="/users/index.html">Аккаунт user</a></li>
+                        <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center pb-2 border-bottom">Название задачи</h4>
+
+                <div class="col-8">
+                    <h3>Условие задачи</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet architecto asperiores
+                        assumenda atque consequatur cupiditate delectus distinctio dolor dolorum eligendi excepturi,
+                        facere illo illum incidunt molestiae nihil nulla, officia, perferendis quisquam reiciendis sequi
+                        soluta
+                        vel velit veniam! Assumenda beatae dolorum, ducimus fuga, natus neque quis repudiandae similique
+                        sint velit
+                        veniam, vero voluptas. Aspernatur distinctio dolorem ea eos iure laborum mollitia, nam nemo
+                        saepe voluptas! Accusamus dignissimos eum, explicabo, fugit incidunt labore maiores nisi nulla
+                        odio, quae ratione sapiente
+                        sunt vero? Ab ad adipisci alias aliquid autem corporis, cum, distinctio fugiat impedit, ipsam
+                        maiores maxime nam officia rerum soluta veritatis?</p>
+
+                    <p>Дата создание задачи: 10.10.2025</p>
+
+                    <form method="post" action="#">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Выполнено
+                            </label>
+                        </div>
+                        <div class="col-12 py-3">
+                            <label for="formFile" class="form-label">Добавить добавить файл</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 pt-4">
+            <h3 class="mb-4 pb-2 border-bottom">История файлов</h3>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-light">
+                    <tr>
+                        <th>Название</th>
+                        <th>Дата создания</th>
+                        <th>Действие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Финансовый отчет Q1 2025.pdf</td>
+                        <td>15.03.2025</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-download"></i> Скачать
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i> Удалить
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Презентация проекта.pptx</td>
+                        <td>10.02.2025</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-download"></i> Скачать
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i> Удалить
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Техническое задание.docx</td>
+                        <td>05.01.2025</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    <i class="bi bi-download"></i> Скачать
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i> Удалить
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
